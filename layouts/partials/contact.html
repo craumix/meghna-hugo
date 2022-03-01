@@ -68,6 +68,16 @@
 			</div>
 			{{ end }}
 		</div>
+		<div>
+			<!--Badges-->
+			<div style="display: flex;margin: 2rem 0;justify-content: space-evenly;">
+				{{ range .badges }}
+				<a href="{{ .href }}" title="{{ .title }}">
+					<img src="{{ .img }}" style="max-width: 16rem" alt="{{ .alt }}" />
+				</a>
+				{{ end }}
+			</div>
+		</div>
 	</div>
 </section>
 {{"<!-- /contact -->" | safeHTML}}
